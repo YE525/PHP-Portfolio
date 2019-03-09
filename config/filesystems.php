@@ -45,7 +45,9 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => storage_path('app'),
+
+        // 'root' => storage_path('app'),    // 変更前
+        'root' => public_path('item'),      // 変更後
         ],
 
         'public' => [
